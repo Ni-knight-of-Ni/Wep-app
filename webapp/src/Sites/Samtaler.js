@@ -8,9 +8,9 @@ import Samtaler_kontacter from './Components/Samtaler_Kontacter'
 
 function Samtaler() {
   return (
-    <div>
+    <div className='samtaler_Grid '>
     <Samtaler_kontacter/>
-    
+
     </div>
 
 

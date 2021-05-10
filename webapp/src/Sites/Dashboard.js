@@ -8,7 +8,7 @@ import Kalender from './Components/Dashboard_Kalender'
 
 function Dashboard() {
   return (
-    <div>
+    <div className="dashboard_Grid">
     <Nyhder/>
     <Kalender/>
     </div>
