@@ -26,31 +26,31 @@ function Navi() {
       <ul className={click ? 'nav-menu active' : 'nav-menu'} >
         <li className='nav-item'>
           <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              Home
+          <i class="fas fa-home"></i> Home
           </Link>
         </li>
 
         <li className='nav-item'>
           <Link to='./Kalender' className='nav-links' onClick={closeMobileMenu}>
-            Kalender
+          <i class="fas fa-compass"></i> Kalender
           </Link>
         </li>
 
         <li className='nav-item'>
           <Link to='./Samtaler' className='nav-links' onClick={closeMobileMenu}>
-            Samtaler
+          <i class="fas fa-user-friends"></i> Samtaler
           </Link>
         </li>
 
         <li className='nav-item'>
           <Link to='./FLDSkolen' className='nav-links' onClick={closeMobileMenu}>
-            FLD Skolen
+          <i class="fas fa-newspaper"></i> FLD Skolen
           </Link>
         </li>
 
         <li className='nav-item'>
           <Link to='./Filer' className='nav-links' onClick={closeMobileMenu}>
-            Filer
+          <i class="fas fa-folder-open"></i> Filer
           </Link>
         </li>
 
