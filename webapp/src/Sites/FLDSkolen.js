@@ -1,5 +1,9 @@
 import React from 'react'
 
+import FLDSkolen_kursuser from './Components/FLDSkolen_kursuser'
+
+import FLDSkolen_blanket from './Components/FLDSkolen_blanket'
+
 import './FLDSkolen.css'
 
 

@@ -10,7 +10,7 @@ function Samtaler() {
   return (
     <div className='samtaler_Grid '>
     <Samtaler_kontacter/>
-
+    <Chat />
     </div>
 
 
