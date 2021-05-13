@@ -30,6 +30,7 @@
   border-radius: 20px !important;
   width: 90%;
   margin: 30px;
+  height: 90% !important;
 }
 
 .ce-chats-container {
@@ -94,7 +95,7 @@
 /* CUSTOM FEED */
 
 .chat-feed {
-  height: 100%;
+  height: 90%;
   width: 90%;
   overflow: scroll;
   background-color: #465769;
@@ -184,7 +185,8 @@
   width: calc(100% - 80px);
   padding: 18px;
   background-color: #465769;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
+  border-radius: 20px;
 }
 
 .message-form {
