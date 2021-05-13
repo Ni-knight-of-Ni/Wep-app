@@ -1,6 +1,8 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 
 import Calender from 'react-calendar'
+
+
 
 import './Kalender.css'
 
@@ -10,16 +12,25 @@ import './Kalender.css'
 
 function Kalender() {
 
-  const [date, setDate] = useState(new Date());
-
- const onChange = () => {
-   setDate(date);
- }
+const [date, onChange] = useState(new Date());
 
   return (
     <div className="kalender_Grid">
 
-    <Calender onChange={onChange} value={date} />
+      <div className='Cal_picker'>
+        <Calender showWeekNumbers onChange={onChange} value={date} />
+      </div>
+
+
+      <div className='Cal_favInfo '>
+        <div>
+          <p>dummy text</p>
+        </div>
+      </div>
+
+      <div className='Cal_info'>
+        {date.toString()}
+      </div>
 
 
     </div>
@@ -29,3 +40,6 @@ function Kalender() {
 }
 
 export default Kalender;
+
+//kilde
+//https://www.npmjs.com/package/react-calendar
