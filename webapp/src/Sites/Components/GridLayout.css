@@ -1,25 +1,12 @@
-/**
-.container {
-  display: grid;
-  grid-gap: px;
-  grid-template-columns: 10rem auto auto auto auto;
-  grid-template-areas:
-  'navbar_Grid  dashboard_Grid samtaler_Grid filer_Grid FLDSkolen_Grid'
-  'navbar_Grid  dashboard_Grid samtaler_Grid filer_Grid FLDSkolen_Grid'
-  'navbar_Grid  dashboard_Grid samtaler_Grid filer_Grid FLDSkolen_Grid'
-}
-**/
-
-/** Test **/
 
 .container {
   display: grid;
-  grid-gap: px;
-  grid-template-columns: 15rem auto auto auto auto;
+  grid-gap: 0;
+  grid-template-columns: 15rem auto ;
   grid-template-areas:
-    'navbar_Grid  Grid_content Grid_content Grid_content Grid_content'
-    'navbar_Grid  Grid_content Grid_content Grid_content Grid_content'
-    'navbar_Grid  Grid_content Grid_content Grid_content Grid_content'
+    'navbar_Grid  Grid_content '
+    'navbar_Grid  Grid_content '
+    'navbar_Grid  Grid_content '
 }
 
 @media screen and (max-width: 960px) {}
