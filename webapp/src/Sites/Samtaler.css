@@ -29,7 +29,7 @@
   background-color: #465769 !important;
   border-radius: 20px !important;
   width: 90%;
-  margin: auto;
+  margin: 30px;
 }
 
 .ce-chats-container {
@@ -95,9 +95,11 @@
 
 .chat-feed {
   height: 100%;
-  width: 100%;
+  width: 90%;
   overflow: scroll;
   background-color: #465769;
+  margin: 30px !important;
+  border-radius: 20px;
 }
 
 .chat-title-container {
@@ -179,9 +181,10 @@
 .message-form-container {
   position: absolute;
   bottom: 0px;
-  width: calc(100% - 36px);
+  width: calc(100% - 80px);
   padding: 18px;
   background-color: #465769;
+  margin-bottom: 30px;
 }
 
 .message-form {
