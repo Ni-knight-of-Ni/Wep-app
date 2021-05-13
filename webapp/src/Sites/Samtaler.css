@@ -1,5 +1,6 @@
 .samtaler_Grid {
     grid-area: Grid_content;
     display: grid;
+    grid-column: auto;
 
 }
