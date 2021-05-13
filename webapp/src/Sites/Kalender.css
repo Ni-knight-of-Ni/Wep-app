@@ -1,5 +1,13 @@
 
-
 .kalender_Grid { grid-area: Grid_content;
+}
 
+
+.Weekdays_names {
+  display: flex;
+/*  padding: 10px;*/
+}
+
+.Weekdays_names p {
+  padding: 30px;
 }
