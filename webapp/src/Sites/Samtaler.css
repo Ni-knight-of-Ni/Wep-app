@@ -69,8 +69,13 @@
   border-radius: 20px !important;
 }
 
+/*kontakt liste boksen*/
 .ce-settings {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #465769 !important;
+  border-radius: 20px;
+  height: 90% !important;
+  margin-top: 30px;
+  margin-right: 30px;
 }
 
 .ce-autocomplete-input {
