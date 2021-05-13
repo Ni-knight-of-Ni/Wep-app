@@ -1,43 +1,26 @@
 import React from 'react'
+import { ChatEngine } from 'react-chat-engine';
 
-
+import ChatFeed from './Components/ChatFeed';
+import LoginForm from './Components/LoginForm';
 
 import './Samtaler.css'
 
+const projectID = '551bfd5a-48e5-4641-84b6-4a0a3d547f82';
 
-function Samtaler() {
+const Samtaler = () => {
+  if (!localStorage.getItem('username')) return <LoginForm />;
+// til login, med username og kode
   return (
-    <div className='samtaler_Grid '>
-
-      <div id="kontacter" classname="Samtaler_kontakter">
-
-        <h3>Samtale</h3>
-        <p>cookie</p>
-
-      </div>
-
-      <div className='Samtaler_Chat'>
-      
-      <h3>Kontakter</h3>
-      <div class="search"><input type="text" placeholder="Search..."></input></div>
-       <div class="scroll">
-        <ul>
-          <li>Simone</li><li>James</li><li>Oliver</li><li>Sofie</li><li>Sofie</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li>
-        </ul>
-      </div>
-      <hr class="rounded"></hr>
-        <h3>Nye chats</h3>
-        <ul>
-          <li>Simone</li><li>James</li>
-        </ul>
-
-      </div>
-    </div>
-
-
-
-
+    <ChatEngine
+      height="100vh"
+      projectID={projectID}
+      userName={localStorage.getItem('username')}
+      userSecret={localStorage.getItem('password')}
+      renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
+      onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
+    />
   );
-}
+};
 
 export default Samtaler;
