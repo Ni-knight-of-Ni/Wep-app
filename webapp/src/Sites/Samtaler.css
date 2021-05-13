@@ -1,4 +1,33 @@
+
+
+.Samtaler_kontakter {
+  grid-area: kontakter;
+}
+
+.Samtaler_Chat {
+  grid-area: Chat;
+
+  padding: 2rem;
+  color: white;
+  background-color: #465769;
+  border-radius: 20px;
+}
+
 .samtaler_Grid {
-    grid-area: Grid_content;
+    grid-area: Grid_content;  
+    grid-gap: 20px;
+    margin: 20px 20px ;
+    display: grid;
+    grid-template-columns: 15rem 2fr;
+    grid-template-areas:
+    'kontakter Chat'
+}
+
+
+#kontacter {
+    padding: 2rem;
+    color: white;
+    background-color: #465769;
+    border-radius: 20px;
 
 }
