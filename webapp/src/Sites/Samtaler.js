@@ -20,10 +20,11 @@ function Samtaler() {
       
       <h3>Kontakter</h3>
       <div class="search"><input type="text" placeholder="Search..."></input></div>
+       <div class="scroll">
         <ul>
-          <li>Simone</li><li>James</li><li>Oliver</li><li>Sofie</li>
+          <li>Simone</li><li>James</li><li>Oliver</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li>
         </ul>
-
+      </div>
         <h3>Nye chats</h3>
         <ul>
           <li>Simone</li><li>James</li>

@@ -22,7 +22,6 @@
     'kontakter Chat'
 }
 
-
 #kontacter {
   padding: 2rem;
   color: white;
@@ -39,6 +38,7 @@ h3 {
   text-decoration: underline;
 }
 
+/*search feltet*/
 .search input[type=text] {
   float: center;
   padding: 6px 20px 6px 20px;
@@ -47,4 +47,28 @@ h3 {
   font-size: 17px;
   border-radius: 20px;
   width: 90%;
+}
+
+/*scrollbarer*/
+.scroll {
+  border: none;
+  width: 100%;
+  height: 30%;
+  overflow: scroll;
+  text-align: left;
+  float: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
 }
