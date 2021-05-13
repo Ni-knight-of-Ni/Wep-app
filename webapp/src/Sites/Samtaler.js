@@ -11,13 +11,15 @@ function Samtaler() {
 
       <div id="kontacter" classname="Samtaler_kontakter">
 
-        <p>cookie </p>
+        <h3>Samtale</h3>
+        <p>cookie</p>
 
       </div>
 
       <div className='Samtaler_Chat'>
       
-      <h3>Kontacter</h3>
+      <h3>Kontakter</h3>
+      <div class="search"><input type="text" placeholder="Search..."></input></div>
         <ul>
           <li>Simone</li><li>James</li><li>Oliver</li><li>Sofie</li>
         </ul>
