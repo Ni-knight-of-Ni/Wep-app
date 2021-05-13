@@ -25,6 +25,28 @@
   letter-spacing: 0.5px;
 }
 
+/*tekst i højre bar gøres hvidt*/
+.ce-section-title {
+  color: white;
+}
+
+.ce-person-text {
+  color: white !important;
+}
+
+#ce-options-drop-down {
+  color: white !important;
+}
+
+/*pilene/iconer hvide*/
+svg {
+  color: white;
+}
+
+#ce-add-username-input {
+  placeholder: hej;
+}
+
 .ce-chat-list {
   background-color: #465769 !important;
   border-radius: 20px !important;
@@ -52,9 +74,12 @@
   border-radius: 20px !important;
 }
 
+/*title i højre boks*/
 .ce-text-input {
   border-radius: 20px !important;
-  border: 1px solid #3b2a50 !important;
+  border: none !important;
+  color: white;
+  background-color: #465769;
 }
 
 .ce-primary-button {
