@@ -25,6 +25,7 @@ function Samtaler() {
           <li>Simone</li><li>James</li><li>Oliver</li><li>Sofie</li><li>Sofie</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>James</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li><li>Sofie</li>
         </ul>
       </div>
+      <hr class="rounded"></hr>
         <h3>Nye chats</h3>
         <ul>
           <li>Simone</li><li>James</li>

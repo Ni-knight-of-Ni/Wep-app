@@ -70,6 +70,15 @@ h3 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d1d4de;
+  background: white;
   border-radius: 10px;
+}
+
+/*skillelinje*/
+hr.rounded {
+  border-top: 1px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: white;
 }
