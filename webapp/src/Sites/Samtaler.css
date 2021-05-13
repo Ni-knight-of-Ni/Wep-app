@@ -38,14 +38,7 @@
   color: white !important;
 }
 
-/*pilene/iconer hvide*/
-svg {
-  color: white;
-}
 
-#ce-add-username-input {
-  placeholder: hej;
-}
 
 .ce-chat-list {
   background-color: #465769 !important;
@@ -59,19 +52,28 @@ svg {
   background-color: #465769 !important;
 }
 
+.ce-chat-card {
+  background-color: white !important;
+}
+
 .ce-active-chat-card {
-  background-color: #cabcdc !important;
-  border: 4px solid #cabcdc !important;
-  border-radius: 20px !important;
+  background-color: lightgrey !important;
+  border: none !important;
+  border-radius: 0px !important;
 }
 
 .ce-chat-subtitle-text {
   color: #595959 !important;
 }
 
+/*mine chats boksen*/
 .ce-chat-form-container {
   padding-bottom: 20px !important;
-  border-radius: 20px !important;
+  border-radius: 20px 20px 0px 0px !important;
+}
+
+#new-chat-plus-button {
+  background-color: #465769 !important;
 }
 
 /*title i højre boks*/
