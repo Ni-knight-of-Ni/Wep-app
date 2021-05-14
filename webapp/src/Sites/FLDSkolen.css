@@ -1,5 +1,76 @@
+.FLDSkolen_Grid {
+    grid-area: Grid_content;
+    grid-gap: 50px;
+    margin: 30px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas:
+        'kursus tilmelding'
 
+}
 
-.FLDSkolen_Grid { grid-area: Grid_content;
+.fld-skolen-kursus {
+    grid-area: kursus;
 
+}
+
+.fld-skolen-tilmelding {
+    grid-area: tilmelding;
+    padding: 2rem;
+    color: white;
+    background-color: #465769;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#kursus {
+    padding: 2rem;
+    color: white;
+    background-color: #465769;
+    border-radius: 20px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+/*search feltet*/
+.search input[type=text] {
+    float: center;
+    padding: 6px 20px 6px 20px;
+    margin: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 20px;
+    width: 90%;
+}
+
+/*scrollbarer*/
+.scroll {
+    border: none;
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+    text-align: left;
+    float: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px #707070;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
 }
