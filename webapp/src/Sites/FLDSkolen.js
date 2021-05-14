@@ -12,23 +12,34 @@ import './FLDSkolen.css'
 function FLDSkolen() {
   return (
     <div className='FLDSkolen_Grid '>
-      <ul>
-        <li>
-          <a> fjernvarme AVC - del 1 </a>
-        </li>
-        <li>
-          <a> Fjernvarme ABC - del 2 </a>
-        </li>
-        <li>
-          <a> Korrosion </a>
-        </li>
-        <li>
-          <a> Arbejdes kontract </a>
-        </li>
-      </ul>
+      <div id="kursus" classname="fld-skolen-kursus">
+        <h3>Kursuser</h3> 
+        <div class="scroll">
+          <ul>
+            <li>
+          <button type="button"> fjernvarme AVC - del 1 </button>
+          </li>
+          <li>
+          <button type="button"> Fjernvarme ABC - del 2 </button>
+          </li>
+          <li>
+          <button type="button"> Korrosion </button>
+          </li>
+          <li>
+          <button type="button"> Arbejdes kontract </button>
+          </li>
+          </ul>
+      </div>
+    </div>
+      <div className='fld-skolen-tilmelding'>
+      
+      <h3>Tilmelding til kursus</h3>
+      <div class="tilmeld"><input type="text" placeholder="Medarbejder nummer"></input></div>
+      <div class="tilmeld"><input type="text" placeholder="Afdeling"></input></div>
+
+      </div>
 
     </div>
-
 
   );
 }
