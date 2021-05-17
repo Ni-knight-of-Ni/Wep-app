@@ -1,6 +1,11 @@
 
 /* Infosheet for dagens begivenhder */
-.Cal_info{ grid-area: Cal_if;}
+.Cal_info{
+  grid-area: Cal_if;
+  /**display: flex;*/
+
+  }
+
   /* General kalender*/
 .Cal_picker{grid-area: Cal_P;
   display: flex;
@@ -10,17 +15,61 @@
 }
 
   /* infosheet for farve indikation */
-.Cal_favInfo{grid-area: Cal_fi;}
+.Cal_favInfo{
+  grid-area: Cal_fi;
+
+  border-color: #465769;
+
+  }
 
 .kalender_Grid { grid-area: Grid_content;
   display: grid;
 
   grid-template-columns: auto auto   ;
   grid-template-areas:
-  'Cal_P Cal_fi '
+  'Cal_P Cal_fi'
   'Cal_P Cal_if'
+  'Cal_P Cal_if'
+  'Cal_P Cal_if'
+  'Cal_P Cal_if'
+  }
+
+
+/* Cal info under groupper */
+.farveKoder {
+  display: flex;
+  padding: 1rem 0 3rem 0 ;
+  justify-content: center;
+  background-color: #465769;
+  color: #fff;
+  border-radius: 20px 20px 0px 0px;
+/*  height: 40px;*/
 }
 
+.infoSection {
+  list-style-type: none;
+  /* */
+  /*height: 300px ;
+  overflow: auto;*/
+}
+
+.farveIndikationer{
+  border-radius: 30px;
+  border-color: #465769;
+  border-style: solid;
+  z-index: 110px;
+  background-color: #fff;
+  transform: translate(0px, -40px);
+}
+.farveIndikationer li{
+  /*border-radius: 30px;
+  border-color: #465769;
+  border-style: solid;*/
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+/*************************/
 
 .Weekdays_names {
   display: flex;
