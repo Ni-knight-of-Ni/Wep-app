@@ -47,7 +47,7 @@ h3 {
     text-decoration: underline;
 }
 
-/*search feltet*/
+/*tilmeldings input felterne*/
 .tilmeld input[type=text] {
     float: center;
     padding: 6px 20px 6px 20px;
@@ -56,6 +56,40 @@ h3 {
     font-size: 17px;
     border-radius: 20px;
     width: 90%;
+}
+
+.tilmeld input[type=number] {
+    float: center;
+    padding: 6px 20px 6px 20px;
+    margin: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 20px;
+    width: 90%;
+}
+
+.tilmeld select {
+    float: center;
+    padding: 6px 20px 6px 20px;
+    margin: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 20px;
+    width: 90%;
+}
+
+/*send knappen*/
+input[type=submit] {
+    border-radius: 20px;
+    padding: 12px 20px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: #707070;
+    color: white;
 }
 
 /*scrollbarer*/
