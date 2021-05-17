@@ -37,6 +37,15 @@ function FLDSkolen() {
       <div class="tilmeld"><input type="text" placeholder="Medarbejder nummer"></input></div>
       <div class="tilmeld"><input type="text" placeholder="Afdeling"></input></div>
 
+<form action="/action_page.php">
+
+<label for="kursus">Kursus</label>
+  <select id="kursus" name="kursus">
+
+
+  </select>
+</form>
+
       </div>
 
     </div>
