@@ -7,8 +7,6 @@ import FLDSkolen_blanket from './Components/FLDSkolen_blanket'
 import './FLDSkolen.css'
 
 
-
-
 function FLDSkolen() {
   return (
     <div className='FLDSkolen_Grid '>
