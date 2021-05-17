@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from 'react-bootstrap/Form'
 
 import FLDSkolen_kursuser from './Components/FLDSkolen_kursuser'
 
@@ -31,7 +32,7 @@ function FLDSkolen() {
     </div>
     
     <div className='fld-skolen-tilmelding'>
-      <form method="post" action="tilmeldings-form.php">
+      <form method="post" action="mailto:josephine1996@live.dk" enctype="text/plain">
         <h3>Tilmelding til kursus</h3>
         <div class="tilmeld"><input name="navn" type="text" placeholder="Navn:"></input></div>
         <div class="tilmeld"><input name="nummer" type="number" placeholder="Medarbejder nummer:"></input></div>
