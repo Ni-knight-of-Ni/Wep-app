@@ -58,8 +58,9 @@ function FLDSkolen() {
         <input type="submit" value="Send blanket"></input>
       </form>
     </div>
-
     </div>
+
+
 
   );
 }
