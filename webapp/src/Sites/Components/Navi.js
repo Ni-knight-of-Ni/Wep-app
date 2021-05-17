@@ -23,6 +23,11 @@ function Navi() {
 // click ? ændre mellem active nav menu active og nav menu .. til mobil version
   return (
     <nav className='navbar navbar_Grid'>
+
+    <div className='menu-icon' onClick={handleClick} >
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+
       <ul className={click ? 'nav-menu active' : 'nav-menu'} >
         <li className='nav-item'>
           <Link to='/' className='nav-links' onClick={closeMobileMenu}>
