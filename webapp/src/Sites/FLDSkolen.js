@@ -33,25 +33,30 @@ function FLDSkolen() {
     </div>
     
     <div className='fld-skolen-tilmelding'>
-      <form action="/action_page.php">
+      <form method="post" action="tilmeldings-form.php">
+        <h3>Tilmelding til kursus</h3>
+        <div class="tilmeld"><input name="navn" type="text" placeholder="Navn:"></input></div>
+        <div class="tilmeld"><input name="nummer" type="number" placeholder="Medarbejder nummer:"></input></div>
+
         <div class="tilmeld">
-          <select>
+          <select name="kursus">
             <option value="fjernvarme1">Fjernvarme AVC - del 1</option>
             <option value="fjernvarme2">Fjernvarme AVC - del 2</option>
             <option value="korrosion">Korrosion</option>
           </select>
         </div>
 
-        <div class="tilmeld"><input type="number" placeholder="Medarbejder nummer:"></input></div>
-        <div class="tilmeld"><input type="text" placeholder="Afdeling:"></input></div>
+        <div class="tilmeld"><input name="afdeling" type="text" placeholder="Afdeling:"></input></div>
         <div class="tilmeld"> 
-          <select>
+          <select name="leder">
             <option value="kurt">Kurt</option>
             <option value="børge">Børge</option>
             <option value="bob">Bob</option>
           </select>
         </div>
-        <input type="submit" value="Send"></input>
+        <div class="tilmeld"><input name="brugers_email" type="text" placeholder="Email"></input></div>
+
+        <input type="submit" value="Send blanket"></input>
       </form>
     </div>
 
