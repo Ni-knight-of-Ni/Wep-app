@@ -6,12 +6,10 @@
     grid-template-columns: 1fr 1.5fr;
     grid-template-areas:
         'kursus tilmelding'
-
 }
 
 .fld-skolen-kursus {
     grid-area: kursus;
-
 }
 
 .fld-skolen-tilmelding {
@@ -115,4 +113,21 @@ input[type=submit]:hover {
 ::-webkit-scrollbar-thumb {
     background: white;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        max-width: 100% !important;
+        margin-left: 0px !important;
+        width: 100% !important;
+    }
+
+    .FLDSkolen_Grid {
+        grid-gap: 20px;
+        grid-template-columns: 1fr !important;
+        grid-template-areas:
+            'kursus'
+            'tilmelding'
+    }
+
 }
