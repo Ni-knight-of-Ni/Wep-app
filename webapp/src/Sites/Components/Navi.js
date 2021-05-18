@@ -22,6 +22,7 @@ function Navi() {
 
 // click ? ændre mellem active nav menu active og nav menu .. til mobil version
   return (
+
     <div>
       <nav className={click ? 'navbar-active navbar_Grid' : 'navbar navbar_Grid'}>
 
@@ -68,6 +69,8 @@ function Navi() {
 
 
     </div>
+
+
   );
 }
 
