@@ -1,16 +1,26 @@
 import React from 'react'
 
-import Nyhder from './Components/Dashboard_Nyheder'
-import Kalender from './Components/Dashboard_Kalender'
-
+import './Dashboard.css'
 
 
 
 function Dashboard() {
   return (
     <div className="dashboard_Grid">
-    <Nyhder/>
-    <Kalender/>
+
+      <div className='Dashbord_Nyheder'>
+        <h1>Ny personale gode</h1>
+        <p>Vi har fået et nyt samarbejde med Claires.dk. Claire har et værktøj der kan hjælpe med at holde styr på ens økonomi, så i har muligheden for at kunne teste det af, og se hvad i synes. </p>
+      </div>
+
+      <div className='Dashbord_kalender'>
+        <p>Table tabl tabl </p>
+      </div>
+
+      <div className='Dashboard_Chat'>
+        <>chatchat</>
+      </div>
+
     </div>
 
 

@@ -1,4 +1,51 @@
 
 .dashboard_Grid { grid-area: Grid_content;
 
+  display: grid;
+  grid-template-columns: auto auto ;
+  padding: 2rem;
+  grid-gap: 2rem;
+  grid-template-areas:
+  'Dash_Ny Dash_Chat'
+  'Dash_Kal Dash_Chat'
+}
+
+
+.Dashbord_Nyheder{
+  background-color: #465769;
+  border-radius: 20px;
+
+
+  grid-area: Dash_Ny;
+}
+
+.Dashbord_kalender{
+  background-color: #465769;
+  border-radius: 20px;
+
+  grid-area: Dash_Kal;
+}
+
+
+.Dashboard_Chat {
+  background-color: #465769;
+  border-radius: 20px;
+
+  grid-area: Dash_Chat;
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .dashboard_Grid { grid-area: Grid_content;
+
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 2rem;
+    grid-gap: 2rem;
+    grid-template-areas:
+    'Dash_Ny '
+    'Dash_Kal '
+    'Dash_Chat'
+  }
 }
