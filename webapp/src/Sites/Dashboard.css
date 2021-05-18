@@ -27,12 +27,7 @@
 }
 
 
-.Dashboard_Chat {
-  background-color: #465769;
-  border-radius: 20px;
 
-  grid-area: Dash_Chat;
-}
 
 
 @media screen and (max-width: 960px) {
@@ -46,6 +41,6 @@
     grid-template-areas:
     'Dash_Ny '
     'Dash_Kal '
-    'Dash_Chat'
+
   }
 }
