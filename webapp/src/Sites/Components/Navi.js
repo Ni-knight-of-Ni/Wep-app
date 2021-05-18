@@ -66,6 +66,7 @@ function Navi() {
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
       </div>
 
+
     </div>
   );
 }
