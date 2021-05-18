@@ -17,9 +17,7 @@ function Dashboard() {
         <p>Table tabl tabl </p>
       </div>
 
-      <div className='Dashboard_Chat'>
-        <>chatchat</>
-      </div>
+
 
     </div>
 
