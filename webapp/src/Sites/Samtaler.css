@@ -359,27 +359,41 @@
   }
 
   @media screen and (max-width: 600px) {
-    * {
+
+    .ce-chats-container {
       max-width: 320px !important;
-      width: 95% !important;
       margin-left: 0px !important;
       margin-right: 0px !important;
-
     }
 
     .message-form-container {
       width: calc(100% - 50px);
       margin-bottom: 34px;
+      max-width: 320px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
     }
 
     .ce-settings {
       height: 90% !important;
       width: 320px !important;
       margin-left: 30px;
+      max-width: 320px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
     }
 
     #new-chat-plus-button {
       margin-top: 50px;
+      max-width: 320px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+
+    .chat-feed {
+      max-width: 320px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
     }
 
   }
