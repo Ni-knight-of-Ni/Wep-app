@@ -20,10 +20,6 @@
 
   /*chat funktion*/
   /* CHAT STYLES */
-  * {
-    font-family: myriad pro;
-    letter-spacing: 0.5px;
-  }
 
   /*tekst i højre bar gøres hvidt*/
   .ce-section-title {
@@ -361,15 +357,19 @@
   @media screen and (max-width: 600px) {
 
     .ce-chats-container {
-      max-width: 320px !important;
-      margin-left: 0px !important;
+      max-width: 310px !important;
+      margin-left: 10px !important;
       margin-right: 0px !important;
+    }
+
+    .ce-chat-list {
+      max-width: 310px !important;
     }
 
     .message-form-container {
       width: calc(100% - 50px);
       margin-bottom: 34px;
-      max-width: 320px !important;
+      max-width: 310px !important;
       margin-left: 0px !important;
       margin-right: 0px !important;
     }
@@ -378,22 +378,23 @@
       height: 90% !important;
       width: 320px !important;
       margin-left: 30px;
-      max-width: 320px !important;
-      margin-left: 0px !important;
+      max-width: 310px !important;
+      margin-left: 10px !important;
       margin-right: 0px !important;
     }
 
     #new-chat-plus-button {
       margin-top: 50px;
-      max-width: 320px !important;
+      max-width: 310px !important;
       margin-left: 0px !important;
       margin-right: 0px !important;
     }
 
     .chat-feed {
-      max-width: 320px !important;
-      margin-left: 0px !important;
+      max-width: 310px !important;
+      margin-left: 10px !important;
       margin-right: 0px !important;
     }
+
 
   }
