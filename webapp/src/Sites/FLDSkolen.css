@@ -116,14 +116,11 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 600px) {
-    * {
+    .FLDSkolen_Grid {
+        grid-gap: 20px;
         max-width: 100% !important;
         margin-left: 0px !important;
         width: 100% !important;
-    }
-
-    .FLDSkolen_Grid {
-        grid-gap: 20px;
         grid-template-columns: 1fr !important;
         grid-template-areas:
             'kursus'
