@@ -29,16 +29,20 @@ const [date, onChange] = useState(new Date());
         <div className='farveIndikationer'>
          <ul>
           <li>
-          Blå
+            <i class="fas fa-circle icon-Blå " ></i>
+            Blå
           </li>
           <li>
-          gul
+            <i class="fas fa-circle icon-yellow"></i>
+            gul
           </li>
           <li>
-          lilla
+            <i class="fas fa-circle icon-lilla"></i>
+            lilla
           </li>
           <li>
-          rød
+            <i class="fas fa-circle icon-red"></i>
+            rød
           </li>
          </ul>
         </div>

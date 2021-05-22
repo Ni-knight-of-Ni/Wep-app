@@ -53,6 +53,13 @@
   overflow: auto;*/
 }
 
+.icon-Blå { color: blue; padding-right: 1rem;}
+.icon-yellow { color: Yellow; padding-right: 1rem;}
+.icon-lilla { color:BlueViolet ; padding-right: 1rem;}
+.icon-red { color: red; padding-right: 1rem;}
+
+
+
 .farveIndikationer{
   border-radius: 30px;
   border-color: #465769;
@@ -207,4 +214,29 @@
 }
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+.Cal_info { display: none;}
+
+
+.Cal_favInfo{
+  margin: 3rem;
+}
+
+.kalender_Grid { grid-area: Grid_content;
+  display: grid;
+
+  grid-template-columns: auto  ;
+  grid-template-areas:
+  'Cal_P'
+  'Cal_fi'
+
+
+  }
 }
