@@ -1,5 +1,5 @@
 import './App.css';
-
+import LoginForm from './Sites/Components/LoginForm';
 //imported sites and compontets
 //sites
 import Navi from './Sites/Components/Navi'
@@ -20,6 +20,7 @@ import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
 import './Sites/Components/GridLayout.css'
 
 function App() {
+  if (!localStorage.getItem('username')) return <LoginForm />;
   return (
     <div className='container'>
 
