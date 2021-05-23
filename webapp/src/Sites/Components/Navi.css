@@ -55,7 +55,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    /*transform: translate(-100%, 60%);*/ /* is fucekd now...en af de andre css'er rammer og kan see se hvad.. nu kan jeg ikke ændre i det så den er normal..  */ 
     font-size: 1.8rem;
     cursor: pointer;
     z-index: 3;
