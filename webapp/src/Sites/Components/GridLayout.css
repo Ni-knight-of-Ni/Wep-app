@@ -1,5 +1,6 @@
 
 .container {
+
   display: grid;
   grid-gap: 0;
   grid-template-columns: 15rem auto ;
@@ -9,7 +10,7 @@
     'navbar_Grid  Grid_content '
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 600px) {
 
   .container {
     display: grid;

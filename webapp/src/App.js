@@ -8,6 +8,7 @@ import Samtaler from './Sites/Samtaler'
 import Filer from './Sites/Filer'
 import FLDSkolen from './Sites/FLDSkolen'
 import Kalender from './Sites/Kalender'
+import Fliler_Bispeparken from './Sites/Fliler_Bispeparken'
 
 //working   <Navi />
 //          <Dashboard />
@@ -32,7 +33,11 @@ function App() {
         <Route path="/FLDSkolen" component={FLDSkolen} />
         <Route path="/Filer" component={Filer} />
         <Route path="/Samtaler" component={Samtaler} />
+        <Route path="/Fliler_Bispeparken" exact component={Fliler_Bispeparken} />
         <Route path="/" exact component={Dashboard} />
+
+
+
 
         </Switch>
       </Router>
@@ -44,11 +49,4 @@ function App() {
 export default App;
 
 
-//<Route path="/" Sites={}>
-//<Route path="/" exact Sites={}>
-
-
 //
-//
-
-//////////////////////////////

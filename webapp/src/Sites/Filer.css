@@ -3,24 +3,34 @@
   }
 /* grid asigment for projects*/
 .Filer_projecter {padding-left: 1rem;
-  padding-top: 1rem}
+  padding-top: 1rem;}
 
-.Filer_projecter1{ grid-area: Proj_1;}
+.Filer_projecter1{ grid-area: Proj_1;
+/*  background-color: white;
+  border-radius: 0 0 20px 20px;
+*/
+ }
 .Filer_projecter2{ grid-area: Proj_2;}
 .Filer_projecter3{ grid-area: Proj_3;}
 .Filer_projecter4{ grid-area: Proj_4;}
 .Filer_projecter5{ grid-area: Proj_5;}
 
+.projecter_Styling{
+  background-color: white;
+  border-radius: 20px; }
+
 
 .FilerImages{
+  object-fit: fill;
   width: 100%;
+  max-width: 100%;
 
   border-radius: 20px 20px 0px 0px;
 }
 
 .Filer_Title {
   text-align: center;
-  color: #fff;
+  color: black;
 }
 /*desktop version*/
 .Filer_scroll{
@@ -33,17 +43,36 @@ grid-gap: 1rem;
 border-color: #fff;
 margin: 5em;
 padding: 2em;
-grid-template-columns: 400px 400px ;
+
+grid-template-columns: repeat(2, 2fr) ;
 grid-template-areas:
-'Proj_T Proj_T'
 'Proj_1 Proj_2'
 'Proj_3 Proj_4'
 'Proj_5 Proj_5'
 '. .'
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 600px) {
 
+  .Filer_scroll{
+  max-width:880px;
+  margin: 2rem;
+  display: grid;
+  background-color: #465769;
+  border-radius: 20px;
+  grid-gap: 1rem;
+  border-color: #fff;
+  margin: 5em;
+  padding: 2em;
 
+  grid-template-columns: repeat(1, 2fr) ;
+  grid-template-areas:
+  'Proj_1'
+  'Proj_2'
+  'Proj_3'
+  'Proj_4'
+  'Proj_5'
+  '. '
+  }
 
 }
