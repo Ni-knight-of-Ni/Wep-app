@@ -1,3 +1,4 @@
+/* Grid set up for fld skolen dekstop version*/
 .FLDSkolen_Grid {
     grid-area: Grid_content;
     grid-gap: 50px;
@@ -8,10 +9,12 @@
         'kursus tilmelding'
 }
 
+/* angiver area for grid*/
 .fld-skolen-kursus {
     grid-area: kursus;
 }
 
+/* angiving af gridarea og general styling af content der  */
 .fld-skolen-tilmelding {
     grid-area: tilmelding;
     padding: 2rem;
@@ -29,6 +32,7 @@
 
 }
 
+/* styling på givende kursuser */
 button {
     background-color: white;
     padding: 10px;
@@ -37,9 +41,12 @@ button {
     border: none;
 }
 
+/* fjerne underlinje*/
 ul {
     list-style-type: none;
 }
+
+/* unerlinje på h3 title.  - skal nok fjernes*/
 
 h3 {
     text-decoration: underline;
@@ -56,6 +63,7 @@ h3 {
     width: 90%;
 }
 
+/*sytling på bootstrap form*/
 .tilmeld input[type=number] {
     float: center;
     padding: 6px 20px 6px 20px;
@@ -114,6 +122,8 @@ input[type=submit]:hover {
     background: white;
     border-radius: 10px;
 }
+
+/* mobil grid version*/
 
 @media screen and (max-width: 600px) {
     .FLDSkolen_Grid {

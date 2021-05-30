@@ -1,4 +1,4 @@
-import './App.css';
+//import af login form side
 import LoginForm from './Sites/Components/LoginForm';
 //imported sites and compontets
 //sites
@@ -15,9 +15,21 @@ import Fliler_Bispeparken from './Sites/Fliler_Bispeparken'
 
 
 //import of router
-
 import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
+
+// Grid layout inport af css og app css
 import './Sites/Components/GridLayout.css'
+import './App.css';
+
+
+
+// det første der bliver kørt på vores side er login siden, som har at hvis du har
+//et gemt login vil du gå vidre til siden hvis ikke vil loginform blive vist.
+
+//næste er router opsætning
+//vi har nav uden for vores switch og som er fuldt loadet in og ikke i en router
+//alle routes er under sider.
+
 
 function App() {
   if (!localStorage.getItem('username')) return <LoginForm />;
@@ -26,20 +38,13 @@ function App() {
 
       <Router className='container'>
         <Navi />
-
-
-
         <Switch>
-        <Route path="/Kalender" component={Kalender} />
-        <Route path="/FLDSkolen" component={FLDSkolen} />
-        <Route path="/Filer" component={Filer} />
-        <Route path="/Samtaler" component={Samtaler} />
-        <Route path="/Fliler_Bispeparken" exact component={Fliler_Bispeparken} />
-        <Route path="/" exact component={Dashboard} />
-
-
-
-
+          <Route path="/Kalender" component={Kalender} />
+          <Route path="/FLDSkolen" component={FLDSkolen} />
+          <Route path="/Filer" component={Filer} />
+          <Route path="/Samtaler" component={Samtaler} />
+          <Route path="/Fliler_Bispeparken" exact component={Fliler_Bispeparken} />
+          <Route path="/" exact component={Dashboard} />
         </Switch>
       </Router>
     </div>

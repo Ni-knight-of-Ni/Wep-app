@@ -1,26 +1,29 @@
+
+//import af react og beste kompunenter så vi kan lave usestates til mobil nav
 import React, {useState, useEffect} from 'react'
+
+//import af linking fra react router så vi kan skifte sider
 import {Link}  from 'react-router-dom'
+//iumport af css
 import './Navi.css'
 
 
 function Navi() {
 
+// anlægning af vores mobil menu til at kunne fungere
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true)
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false)
 
-    const showButton = () => {
-      if(window.innerWidth <= 960) {
-        setButton(false)
-      } else {
-        setButton(true)
-      }
-    };
+
+
 
 
 // click ? ændre mellem active nav menu active og nav menu .. til mobil version
+//links til at kunne ændre url så router,switch kan render den nye side
+
   return (
 
     <div>

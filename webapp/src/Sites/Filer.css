@@ -1,3 +1,4 @@
+/* angiving af af area til grid conetnt..*/
 .filer_Grid { grid-area: Grid_content;
 
   }
@@ -19,12 +20,11 @@
   background-color: white;
   border-radius: 20px; }
 
-
+/*gøre sp billederne flyder alt de kan i deres container.*/
 .FilerImages{
   object-fit: fill;
   width: 100%;
   max-width: 100%;
-
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -43,7 +43,6 @@ grid-gap: 1rem;
 border-color: #fff;
 margin: 5em;
 padding: 2em;
-
 grid-template-columns: repeat(2, 2fr) ;
 grid-template-areas:
 'Proj_1 Proj_2'
@@ -52,6 +51,8 @@ grid-template-areas:
 '. .'
 }
 
+
+/* mobil version af siden*/
 @media screen and (max-width: 600px) {
 
   .Filer_scroll{

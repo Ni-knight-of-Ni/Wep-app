@@ -1,4 +1,6 @@
-
+/*måden vores app grid er sat op, vi har 2 grids så vi kan give det ene til navbaren og det andet til content som vi vil loade index
+  Til mobilverisonen giver vi den en størelse på 0 hvilke nok er hvad der gør det problmatiks for transision i className
+  dog dette gør at vores andet content grid kan fylde hele siden.*/
 .container {
 
   display: grid;

@@ -1,18 +1,30 @@
+
+//import af react
 import React from 'react'
+
+//import af forms fra boostrap
 import Form from 'react-bootstrap/Form'
 
+//importer kompunent fra desse javascript
 import FLDSkolen_kursuser from './Components/FLDSkolen_kursuser'
-
 import FLDSkolen_blanket from './Components/FLDSkolen_blanket'
 
+//import of css
 import './FLDSkolen.css'
 
 
 function FLDSkolen() {
+
+
+  // opsat en unordered list med de forksellige kuruser som FLD kunne give
+
+  // den importede Boostrap form hvor vi har bruget denne til at kunne opsætte en form til at kunne tilmelde sig et kurusus
+
   return (
     <div className='FLDSkolen_Grid '>
+
       <div id="kursus" classname="fld-skolen-kursus">
-        <h3>Kursuser</h3> 
+        <h3>Kursuser</h3>
         <div class="scroll">
           <ul>
             <li>
@@ -30,7 +42,7 @@ function FLDSkolen() {
           </ul>
       </div>
     </div>
-    
+
     <div className='fld-skolen-tilmelding'>
       <form method="post" action="mailto:josephine1996@live.dk" enctype="text/plain">
         <h3>Tilmelding til kursus</h3>
@@ -46,7 +58,7 @@ function FLDSkolen() {
         </div>
 
         <div class="tilmeld"><input name="afdeling" type="text" placeholder="Afdeling:"></input></div>
-        <div class="tilmeld"> 
+        <div class="tilmeld">
           <select name="leder">
             <option value="kurt">Kurt</option>
             <option value="børge">Børge</option>

@@ -1,17 +1,19 @@
+/*giver nav des egent grid area i grid layout delen på app.js*/
 .navbar_Grid {
   grid-area: navbar_Grid;
 
 }
 
+/* styling af boxen for navbaren*/
 .navbar {
   position: relative;
   background-color: #465769;
   height: 100vh;
   margin: 0;
-
+  border-radius: 0px 20px 20px 0px;
 }
 
-
+/* styling af linksne på siden*/
 .nav-links {
   color: white;
   display: flex;
@@ -27,35 +29,32 @@
   font-size: 25px;
 }
 
+/* lave en hover effekt på nav elementerne*/
 .nav-links:hover {
   color: grey;
 }
 
-.nav-menu {
-/*  margin-top: 4rem; */
-}
-
-.navbar {
-  border-radius: 0px 20px 20px 0px;
-}
-
-
+/* gemmer burgeren på dekstop versionen*/
 .menu-icon {
   display: none;
 }
 
+/* mobil version*/
 @media screen and (max-width: 600px) {
+
+
 
  .NavbarItems {
     position: relative;
   }
+
 
   .menu-icon {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    /*transform: translate(-100%, 60%);*/ /* is fucekd now...en af de andre css'er rammer og kan see se hvad.. nu kan jeg ikke ændre i det så den er normal..  */ 
+    /*transform: translate(-100%, 60%);*/ /* is fucekd now...en af de andre css'er rammer og kan see se hvad.. nu kan jeg ikke ændre i det så den er normal..  */
     font-size: 1.8rem;
     cursor: pointer;
     z-index: 3;
@@ -75,6 +74,7 @@
   z-index: 2
 }
 
+/* nå i mobil skyder vi nav baren til venstre så den ikke gå ind o genere brugeren*/
 .navbar{
   display: flex;
   flex-direction: column;
@@ -82,14 +82,14 @@
   left: -100%;
   transition: all 0.5s ease;
 }
-
+/* nå vi trykker på bruger menuen bliver denne aktiveret */
 .navbar-active{
   display: flex;
   left: 0;
   z-index: 2;
   transition: all 0.5s ease;
 }
-
+/*sætter nav items over på de andr elemener*/
 .nav-item {
   z-index: 1;
 }
@@ -100,11 +100,11 @@
   width: 100%;
   height: 100vh;
   position: absolute;
-
   opacity: 1;
   transition: all 0.5s ease;
 }
 
+/*sætter menubaren ind nå brugern er trykket på, dog problem med transistion lige nu og dette ikke virker..*/
 .nav-menu.active {
   background: #465769;
   left: 0;
@@ -120,12 +120,15 @@
   display: table;
 }
 
+/* styling af linksne nå man hover*/
 .nav-links:hover {
   background-color: #fff;
   color: #242424;
   border-radius: 0;
 }
 
+
+/* styling for nav linksne på mobil version*/
 .nav-links-mobile {
   display: block;
   text-align: center;
@@ -141,6 +144,8 @@
   transition: all 0.3s ease-out;
 }
 
+
+/* giver mobil navn en hover effect*/
 .nav-links-mobile:hover {
   background: #fff;
   color: #242424;
