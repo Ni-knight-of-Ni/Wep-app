@@ -1,16 +1,20 @@
+//import af react
 import React from 'react'
 
+//import af bileder og anginivng af navn til bruge i functioner
 import Bispeparken from './Components/Images/Bispeparken-400x400.jpg'
 import Håndbog from './Components/Images/Nymindegaard-400x400.jpg'
 import Melstedhusene from './Components/Images/melstedhusene-400x400.jpg'
 
-
+//import af css
 import './Filer.css'
 
 
 
 
 function Filer() {
+
+  //ikke meget kørende her.. bare basis ting for at se det virkede med linking lige nu
   return (
     <div className='filer_Grid '>
 

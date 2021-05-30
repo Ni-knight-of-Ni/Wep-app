@@ -1,9 +1,12 @@
+// import af react
 import React from 'react'
+
+// import af bootstrap hvor vi kun tager Table functionen der inde.
+
 import { Table } from 'react-bootstrap';
 
-
+//import af css
 import './bootstrap.css';
-
 import './Dashboard.css'
 
 //image import
@@ -11,6 +14,10 @@ import Bispeparken from './Components/Images/Bispeparken-400x400.jpg'
 
 
 function Dashboard() {
+
+  //intilvidre har vi opdel sidne i 2 rows, en til kalender en til nyheder, dette skal ses igennem da nyt data fra tests er kommet ind
+  //table skal sættes ind i nyt document så det er nemmer overskuligt her inde, lige så med nyheder og så lave functioner der kan hente data og imput det ind.
+
   return (
     <div className="dashboard_Grid">
 
