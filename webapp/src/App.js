@@ -1,4 +1,6 @@
 //import af login form side
+import './App.css';
+
 import LoginForm from './Sites/Components/LoginForm';
 //imported sites and compontets
 //sites
