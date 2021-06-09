@@ -9,6 +9,8 @@ import Bispeparken from './Components/Images/Bispeparken-400x400.jpg'
 import Håndbog from './Components/Images/Nymindegaard-400x400.jpg'
 import Melstedhusene from './Components/Images/melstedhusene-400x400.jpg'
 
+import Filer_element from './Components/Filer_Element'
+
 
 import './Filer.css'
 
@@ -23,10 +25,10 @@ function Filer() {
   return (
     <div className='filer_Grid '>
 
-    <div className='Filer_projecter'> <h2>Filer</h2></div>
+    <div className='Filer_projecter'> </div>
 
       <div class="Filer_scroll">
-
+        <h2>Filer</h2>
           <div className='Filer_projecter1 projecter_Styling'>
             <img src={Bispeparken} alt='' className='FilerImages' ></img>
             <Link to='./Fliler_Bispeparken' className=''>
@@ -55,7 +57,12 @@ function Filer() {
           </div>
 
       </div>
+
+
+        <Filer_element/>
     </div>
+
+
 
 
   );
