@@ -8,7 +8,6 @@ import {Link}  from 'react-router-dom'
 import Bispeparken from './Components/Images/Bispeparken-400x400.jpg'
 import Håndbog from './Components/Images/Nymindegaard-400x400.jpg'
 import Melstedhusene from './Components/Images/melstedhusene-400x400.jpg'
-
 import Filer_element from './Components/Filer_Element'
 
 
@@ -29,37 +28,40 @@ function Filer() {
 
       <div class="Filer_scroll">
         <h2>Filer</h2>
-          <div className='Filer_projecter1 projecter_Styling'>
-            <img src={Bispeparken} alt='' className='FilerImages' ></img>
-            <Link to='./Fliler_Bispeparken' className=''>
-            <h2 className='Filer_Title' >Bispeparken</h2>
-            </Link>
-          </div>
-
-          <div className='Filer_projecter2 projecter_Styling'>
-            <img src={Håndbog} alt='' className='FilerImages'></img>
-            <h2 className='Filer_Title' >Håndbog</h2>
-          </div>
-
-          <div className='Filer_projecter3 projecter_Styling'>
-            <img src={Melstedhusene} alt='' className='FilerImages'></img>
-            <h2 className='Filer_Title' >Melstedhusene</h2>
-          </div>
-
-          <div className='Filer_projecter4 projecter_Styling'>
-            <img src={Bispeparken} alt=''  className='FilerImages'></img>
-            <h2 className='Filer_Title'>Bispeparken</h2>
-          </div>
-
-          <div className='Filer_projecter5 projecter_Styling'>
-            <img src={Melstedhusene} alt=''  className='FilerImages'></img>
-            <h2 className='Filer_Title'>Bispeparken</h2>
-          </div>
+        <Filer_element/>
 
       </div>
 
 
-        <Filer_element/>
+
+
+
+        <div className='Filer_projecter1 projecter_Styling'>
+          <img src={Bispeparken} alt='' className='FilerImages' ></img>
+          <Link to='./Fliler_Bispeparken' className=''>
+          <h2 className='Filer_Title' >Bispeparken</h2>
+          </Link>
+        </div>
+
+        <div className='Filer_projecter2 projecter_Styling'>
+          <img src={Håndbog} alt='' className='FilerImages'></img>
+          <h2 className='Filer_Title' >Håndbog</h2>
+        </div>
+
+        <div className='Filer_projecter3 projecter_Styling'>
+          <img src={Melstedhusene} alt='' className='FilerImages'></img>
+          <h2 className='Filer_Title' >Melstedhusene</h2>
+        </div>
+
+        <div className='Filer_projecter4 projecter_Styling'>
+          <img src={Bispeparken} alt=''  className='FilerImages'></img>
+          <h2 className='Filer_Title'>Bispeparken</h2>
+        </div>
+
+        <div className='Filer_projecter5 projecter_Styling'>
+          <img src={Melstedhusene} alt=''  className='FilerImages'></img>
+          <h2 className='Filer_Title'>Bispeparken</h2>
+        </div>
     </div>
 
 

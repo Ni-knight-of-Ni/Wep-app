@@ -51,6 +51,22 @@ grid-template-areas:
 '. .'
 }
 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $card-bg;
+  background-clip: border-box;
+  border: $card-border-width solid $card-border-color;
+  @include border-radius($card-border-radius);
+}
+.card-img-top {
+  width: 100%; /*/ Required because we use flexbox and this inherently applies align-self: stretch*/
+  @include border-top-radius($card-inner-border-radius);
+}
+
 
 /* mobil version af siden*/
 @media screen and (max-width: 600px) {
