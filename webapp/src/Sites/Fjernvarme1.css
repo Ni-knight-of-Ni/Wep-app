@@ -1,0 +1,25 @@
+/* angiving af af area til grid conetnt..*/
+.fjernvarme1_Grid {
+  grid-area: Grid_content;
+}
+
+/*desktop version*/
+.Fjernvarme1_scroll {
+  height: 80%;
+  max-width: 80%;
+  margin: 70px auto;
+  background-color: #465769;
+  border-radius: 20px;
+  padding: 2em;
+  border: none;
+  text-align: center;
+  color: white;
+}
+/* mobil version af siden*/
+@media screen and (max-width: 600px) {
+  .Fjernvarme1_scroll {
+    height: 100%;
+    max-width: 100%;
+    margin: 50px 0px;
+  }
+}

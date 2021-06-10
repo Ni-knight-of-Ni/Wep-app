@@ -2,6 +2,9 @@
 //import af react
 import React from 'react'
 
+//import af linking for react router her til kan vi link til yderliger sider her inde
+import {Link}  from 'react-router-dom'
+
 //import af forms fra boostrap
 import Form from 'react-bootstrap/Form'
 
@@ -25,19 +28,116 @@ function FLDSkolen() {
 
       <div id="kursus" classname="fld-skolen-kursus">
         <h3>Kursuser</h3>
-        <div class="scroll">
+        <div class="scroller">
           <ul>
             <li>
-          <button type="button"> fjernvarme AVC - del 1 </button>
+          <button type="button" class="buttons"> <Link to='./Fjernvarme1'>Fjernvarme AVC - del 1
+            </Link> </button>
           </li>
           <li>
-          <button type="button"> Fjernvarme ABC - del 2 </button>
+          <button type="button" class="buttons"> Fjernvarme ABC - del 2 </button>
           </li>
           <li>
-          <button type="button"> Korrosion </button>
+          <button type="button" class="buttons"> BOSCH varmepumper </button>
           </li>
           <li>
-          <button type="button"> Arbejdes kontract </button>
+          <button type="button" class="buttons"> Gastech varmepumper </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Korrosion </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Fugning </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Gulvvarme </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Viega - Rør og fittings til opbygning af brugsvandinstallationer </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Geberit - Rør og fittings til opbygning af brugsvandinstallationer </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> GROHE armaturer </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Geberit/Ifö toiletter og cisterner </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> FM Mattsson/Damixa/Mora armaturer </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
+          </li>
+          <li>
+          <button type="button" class="buttons"> Arbejdes kontrakt </button>
           </li>
           </ul>
       </div>
@@ -53,7 +153,16 @@ function FLDSkolen() {
           <select name="kursus">
             <option value="fjernvarme1">Fjernvarme AVC - del 1</option>
             <option value="fjernvarme2">Fjernvarme AVC - del 2</option>
+            <option value="boschvarme">BOSCH varmepumper</option>
+            <option value="gastechvarme">Gastech varmepumper</option>
             <option value="korrosion">Korrosion</option>
+            <option value="fugning">Fugning</option>
+            <option value="Gulvvarme">Gulvvarme</option>
+            <option value="Viegaroer">Viega - Rør og fittings til opbygning af brugsvandinstallationer </option>
+            <option value="geberitroer">Geberit - Rør og fittings til opbygning af brugsvandinstallationer</option>
+            <option value="grohearmatur">GROHE armaturer</option>
+            <option value="geberitifo">Geberit/Ifö toiletter og cisterner</option>
+            <option value="fmmattssondamixamora">FM Mattsson/Damixa/Mora armaturer</option>
           </select>
         </div>
 
@@ -67,7 +176,7 @@ function FLDSkolen() {
         </div>
         <div class="tilmeld"><input name="brugers_email" type="text" placeholder="Email"></input></div>
 
-        <input type="submit" value="Send blanket"></input>
+        <input type="submit" value="Send blanket" class="skrift"></input>
       </form>
     </div>
     </div>

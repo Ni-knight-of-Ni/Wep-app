@@ -11,6 +11,7 @@ import Filer from './Sites/Filer'
 import FLDSkolen from './Sites/FLDSkolen'
 import Kalender from './Sites/Kalender'
 import Fliler_Bispeparken from './Sites/Fliler_Bispeparken'
+import Fjernvarme1 from './Sites/Fjernevarme1'
 
 //working   <Navi />
 //          <Dashboard />
@@ -46,6 +47,7 @@ function App() {
           <Route path="/Filer" component={Filer} />
           <Route path="/Samtaler" component={Samtaler} />
           <Route path="/Fliler_Bispeparken" exact component={Fliler_Bispeparken} />
+          <Route path="/Fjernvarme1" exact component={Fjernvarme1} />
           <Route path="/" exact component={Dashboard} />
         </Switch>
       </Router>

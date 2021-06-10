@@ -1,140 +1,140 @@
 /* Grid set up for fld skolen dekstop version*/
 .FLDSkolen_Grid {
-    grid-area: Grid_content;
-    grid-gap: 50px;
-    margin: 30px 50px;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-areas:
-        'kursus tilmelding'
+  grid-area: Grid_content;
+  grid-gap: 50px;
+  margin: 30px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-areas: "kursus tilmelding";
 }
 
 /* angiver area for grid*/
 .fld-skolen-kursus {
-    grid-area: kursus;
+  grid-area: kursus;
 }
 
 /* angiving af gridarea og general styling af content der  */
 .fld-skolen-tilmelding {
-    grid-area: tilmelding;
-    padding: 2rem;
-    color: white;
-    background-color: #465769;
-    border-radius: 20px;
-    text-align: center;
+  grid-area: tilmelding;
+  padding: 2rem;
+  color: white;
+  background-color: #465769;
+  border-radius: 20px;
+  text-align: center;
 }
 
 #kursus {
-    padding: 2rem;
-    color: white;
-    background-color: #465769;
-    border-radius: 20px;
-
+  padding: 2rem;
+  color: white;
+  background-color: #465769;
+  border-radius: 20px;
+  text-align: center;
 }
 
 /* styling på givende kursuser */
-button {
-    background-color: white;
-    padding: 10px;
-    margin: 10px 0px;
-    border-radius: 20px;
-    border: none;
+.buttons {
+  background-color: white;
+  padding: 8px 10px 8px 10px;
+  margin: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 90%;
 }
 
 /* fjerne underlinje*/
 ul {
-    list-style-type: none;
-}
-
-/* unerlinje på h3 title.  - skal nok fjernes*/
-
-h3 {
-    text-decoration: underline;
+  list-style-type: none;
 }
 
 /*tilmeldings input felterne*/
-.tilmeld input[type=text] {
-    float: center;
-    padding: 6px 20px 6px 20px;
-    margin: 10px;
-    border: none;
-    font-size: 17px;
-    border-radius: 20px;
-    width: 90%;
+.tilmeld input[type="text"] {
+  float: center;
+  padding: 8px 20px 8px 20px;
+  margin: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 90%;
 }
 
 /*sytling på bootstrap form*/
-.tilmeld input[type=number] {
-    float: center;
-    padding: 6px 20px 6px 20px;
-    margin: 10px;
-    border: none;
-    font-size: 17px;
-    border-radius: 20px;
-    width: 90%;
+.tilmeld input[type="number"] {
+  float: center;
+  padding: 8px 20px 8px 20px;
+  margin: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 90%;
 }
 
 .tilmeld select {
-    float: center;
-    padding: 6px 20px 6px 20px;
-    margin: 10px;
-    border: none;
-    font-size: 17px;
-    border-radius: 20px;
-    width: 90%;
+  float: center;
+  padding: 8px 20px 8px 20px;
+  margin: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 90%;
 }
 
 /*send knappen*/
-input[type=submit] {
-    border-radius: 20px;
-    padding: 12px 20px;
-    background-color: white;
-    cursor: pointer;
-    border: none;
+input[type="submit"] {
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
 }
 
-input[type=submit]:hover {
-    background-color: #707070;
-    color: white;
+input[type="submit"]:hover {
+  background-color: #707070;
+  color: white;
 }
-
+.skrift {
+  font-size: 20px;
+}
 /*scrollbarer*/
-.scroll {
-    border: none;
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
-    text-align: left;
-    float: center;
+.scroller {
+  border: none;
+  width: 100%;
+  height: 750px;
+  overflow: scroll;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 0px;
+  width: 8px;
+  height: 0px;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px #707070;
-    border-radius: 10px;
+  box-shadow: inset 0 0 10px #707070;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 10px;
+  background: white;
+  border-radius: 10px;
 }
 
 /* mobil grid version*/
 
 @media screen and (max-width: 600px) {
-    .FLDSkolen_Grid {
-        grid-gap: 20px;
-        max-width: 100% !important;
-        margin-left: 0px !important;
-        width: 100% !important;
-        grid-template-columns: 1fr !important;
-        grid-template-areas:
-            'kursus'
-            'tilmelding'
-    }
-
+  .FLDSkolen_Grid {
+    grid-gap: 20px;
+    max-width: 100% !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "kursus"
+      "tilmelding";
+  }
+  .scroller {
+    height: 300px;
+  }
 }
