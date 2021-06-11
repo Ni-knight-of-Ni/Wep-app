@@ -23,44 +23,10 @@ function Filer() {
 
   return (
     <div className='filer_Grid '>
-
-    <div className='Filer_projecter'> </div>
-
-      <div class="Filer_scroll">
-        <h2>Filer</h2>
-        <Filer_element/>
-
-      </div>
-
-
-
-
-
-        <div className='Filer_projecter1 projecter_Styling'>
-          <img src={Bispeparken} alt='' className='FilerImages' ></img>
-          <Link to='./Fliler_Bispeparken' className=''>
-          <h2 className='Filer_Title' >Bispeparken</h2>
-          </Link>
-        </div>
-
-        <div className='Filer_projecter2 projecter_Styling'>
-          <img src={Håndbog} alt='' className='FilerImages'></img>
-          <h2 className='Filer_Title' >Håndbog</h2>
-        </div>
-
-        <div className='Filer_projecter3 projecter_Styling'>
-          <img src={Melstedhusene} alt='' className='FilerImages'></img>
-          <h2 className='Filer_Title' >Melstedhusene</h2>
-        </div>
-
-        <div className='Filer_projecter4 projecter_Styling'>
-          <img src={Bispeparken} alt=''  className='FilerImages'></img>
-          <h2 className='Filer_Title'>Bispeparken</h2>
-        </div>
-
-        <div className='Filer_projecter5 projecter_Styling'>
-          <img src={Melstedhusene} alt=''  className='FilerImages'></img>
-          <h2 className='Filer_Title'>Bispeparken</h2>
+        <div class="Filer_scroll">
+          <h2 className='Container_Title' >Filer</h2>
+          <div className='element_Container1'><Filer_element/></div>
+          <div className='element_Container2'><Filer_element/></div>
         </div>
     </div>
 

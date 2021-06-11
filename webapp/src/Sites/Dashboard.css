@@ -115,6 +115,10 @@
   border-radius: 20px; }
 
 
+.favColor {
+  color: white;
+}
+
 /* mobil layuout*/
 @media screen and (max-width: 600px) {
 
@@ -132,7 +136,7 @@
 
 /* gøre så kalender gå helt ud til kanten*/
   .Dashbord_kalender{
-    padding: 0;
+    padding: 10px;
 
   }
 

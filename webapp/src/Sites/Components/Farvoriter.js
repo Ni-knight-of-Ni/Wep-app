@@ -11,7 +11,7 @@ function Favorit() {
 
     <div className='Favo_Layout'>
       <div className='Favo_container'>
-        <h1>Farvoriter</h1>
+        <h1 className='favColor'>Farvoriter</h1>
         <section className='Favo_Favs_Container'>
           <ul className='Favo_Favs'>
 

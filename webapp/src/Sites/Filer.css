@@ -36,6 +36,8 @@
 .Filer_scroll{
 max-width:880px;
 margin: 2rem;
+
+
 display: grid;
 background-color: #465769;
 border-radius: 20px;
@@ -45,10 +47,9 @@ margin: 5em;
 padding: 2em;
 grid-template-columns: repeat(2, 2fr) ;
 grid-template-areas:
-'Proj_1 Proj_2'
-'Proj_3 Proj_4'
-'Proj_5 Proj_5'
-'. .'
+'Fil_title Fil_title'
+'Ele_cont1 Ele_cont2'
+
 }
 
 .card {
@@ -67,6 +68,25 @@ grid-template-areas:
   @include border-top-radius($card-inner-border-radius);
 }
 
+.Container_Title{
+  display: flex;
+  flex-direction: column;
+  grid-area: Fil_title;
+  color: white;
+}
+
+.element_Container1 {
+  grid-area: Ele_cont1;
+  display: flex;
+
+
+}
+.element_Container2 {
+  grid-area: Ele_cont2;
+  display: flex;
+
+
+}
 
 /* mobil version af siden*/
 @media screen and (max-width: 600px) {

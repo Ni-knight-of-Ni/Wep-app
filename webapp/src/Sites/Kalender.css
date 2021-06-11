@@ -7,7 +7,7 @@
   /* General kalender*/
 .Cal_picker{grid-area: Cal_P;
   display: flex;
-  flex-direction: column-reverse;
+
   padding-bottom: 2rem;
   padding-left: 2rem  ;
 }
@@ -25,10 +25,10 @@
   grid-template-columns: auto auto   ;
   grid-template-areas:
   'Cal_P Cal_fi'
-  'Cal_P Cal_if'
-  'Cal_P Cal_if'
-  'Cal_P Cal_if'
-  'Cal_P Cal_if'
+  'Cal_P Cal_fi'
+  'Cal_P Cal_fi'
+  'Cal_if Cal_if'
+  'Cal_if Cal_if'
   }
 
 

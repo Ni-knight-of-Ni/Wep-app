@@ -12,8 +12,7 @@ const TheirMessage = ({ lastMessage, message }) => {
                     style={{ backgroundImage: message.sender && `url(${message.sender.avatar})` }}
                 />
             )}
-            //Indeholdet på beskderne, endten skal beskeden havde en text længeder der er støre en 0
-            //eller havde et billede og text sendt med sig.
+            
             {message.attachments && message.attachments.length > 0
                 ? (
                     <img
