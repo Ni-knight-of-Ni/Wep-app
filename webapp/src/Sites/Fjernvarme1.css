@@ -13,13 +13,62 @@
   padding: 2em;
   border: none;
   text-align: center;
-  color: white;
 }
+.white {
+  color: white !important;
+}
+.box {
+  background-color: white;
+}
+
+.box {
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 50px 60px 50px 60px;
+  padding: 40px 20px 40px 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-align: left;
+  padding-right: 30px;
+}
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-left: 3px solid #787878;
+  text-align: left;
+  padding-left: 70px;
+}
+
+/* Clear floats after the columns */
+.box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* mobil version af siden*/
 @media screen and (max-width: 600px) {
   .Fjernvarme1_scroll {
     height: 100%;
     max-width: 100%;
     margin: 50px 0px;
+    padding: 5px;
+  }
+  .box {
+    margin: 10px;
+    padding: 10px;
+  }
+  .column1 {
+    padding-left: 10px;
   }
 }
