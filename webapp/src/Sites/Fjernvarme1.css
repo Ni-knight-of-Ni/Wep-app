@@ -24,7 +24,7 @@
 .box {
   box-sizing: border-box;
   border-radius: 20px;
-  margin: 50px 60px 50px 60px;
+  margin: 50px 60px 20px 60px;
   padding: 40px 20px 40px 20px;
 }
 
@@ -54,6 +54,14 @@
   content: "";
   display: table;
   clear: both;
+}
+.knap-stil {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* mobil version af siden*/

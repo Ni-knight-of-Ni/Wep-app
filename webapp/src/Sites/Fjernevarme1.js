@@ -49,6 +49,8 @@ function Fjernvarme1() {
       <p>(evt. i samarbejde med konsulent fra Danfoss og Grundfos)</p>
     </div>
   </div>
+  <button class="knap-stil"><Link to='./FLDSkolen'>Tilmeld
+            </Link></button>
 </div>
     
     </div>
