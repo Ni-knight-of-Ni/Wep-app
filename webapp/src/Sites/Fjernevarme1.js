@@ -15,6 +15,7 @@ function Fjernvarme1() {
 
   return (
     <div className='Fjernvarme1_Grid '>
+      <a href="./FLDSkolen" class="previous round"><i class="fas fa-chevron-left fa-3x"></i></a>
 <div class="Fjernvarme1_scroll">
   <h3 class="white">Fjernvarme AVC - del 1</h3>
   <div class="box">
