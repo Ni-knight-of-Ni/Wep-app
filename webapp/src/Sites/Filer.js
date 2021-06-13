@@ -5,11 +5,11 @@ import React from 'react'
 import {Link}  from 'react-router-dom'
 
 //loader billder ind og giver dem et variable navn så vi nemt kan bruge det igennem siden.
-import Bispeparken from './Components/Images/Bispeparken-400x400.jpg'
-import Håndbog from './Components/Images/Nymindegaard-400x400.jpg'
+import Bispeparken from './Components/Images/Bispeparken-400x200.png'
+import Håndbog from './Components/Images/handbook-400x200.png'
 import Melstedhusene from './Components/Images/melstedhusene-400x400.jpg'
 import Filer_element from './Components/Filer_Element'
-
+import Filer_element2 from './Components/Filer_element2'
 
 import './Filer.css'
 
@@ -25,9 +25,15 @@ function Filer() {
     <div className='filer_Grid '>
         <div class="Filer_scroll">
           <h2 className='Container_Title' >Filer</h2>
-          <div className='element_Container1'><Filer_element/></div>
-          <div className='element_Container2'><Filer_element/></div>
+          <div className='Container_Elements'>
+            <Filer_element/>
+          </div>
+          <div className='Container_Elements'>
+            <Filer_element2/>
+          </div>
+
         </div>
+      
     </div>
 
 

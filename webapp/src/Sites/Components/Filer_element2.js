@@ -1,15 +1,14 @@
-
 // import af react
 import React from 'react'
 
-import Bispeparken from './Images/Bispeparken-400x200.png'
+import Bispeparken from './Images/Bispeparken-400x400.jpg'
 
-import {Element_Navn} from './Element_Navn'
+import { Element_Navn2} from './Element_Navn'
 
 
-import {Card} from 'react-bootstrap'
+import {Card } from 'react-bootstrap'
 
-function Filer_element() {
+function Filer_element2() {
 
     //script til at hente data fra en api ?
 
@@ -18,7 +17,7 @@ function Filer_element() {
   return (
 
     <>
-    {Element_Navn.map((item, index) => {
+    {Element_Navn2.map((item, index) => {
       return(
 
         <Card className={item.divName} style={{ width: '18rem' }}>
@@ -33,4 +32,4 @@ function Filer_element() {
     </>
   );
 }
-export default Filer_element;
+export default Filer_element2;
