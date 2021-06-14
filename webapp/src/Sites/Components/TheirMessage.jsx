@@ -12,6 +12,10 @@ const TheirMessage = ({ lastMessage, message }) => {
                     style={{ backgroundImage: message.sender && `url(${message.sender.avatar})` }}
                 />
             )}
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 752f94657528799aac8b5ec8636c1ebe1711417b
             {message.attachments && message.attachments.length > 0
                 ? (
                     <img

@@ -45,8 +45,79 @@
   color: black;
 }
 /*desktop version*/
-.Filer_scroll {
-  max-width: 880px;
+.Filer_scroll{
+max-width:880px;
+margin: 2rem;
+display: grid;
+background-color: #465769;
+border-radius: 20px;
+grid-gap: 1rem;
+border-color: #fff;
+
+padding: 2em;
+grid-template-columns: repeat(2, 2fr) ;
+grid-template-areas:
+'Fil_title Fil_title'
+'Ele_cont1 Ele_cont2'
+
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $card-bg;
+  background-clip: border-box;
+  border: $card-border-width solid $card-border-color;
+  @include border-radius($card-border-radius);
+}
+.card-img-top {
+  width: 100%; /*/ Required because we use flexbox and this inherently applies align-self: stretch*/
+  border-radius: 20px;
+  @include border-top-radius($card-inner-border-radius);
+}
+
+.Container_Title{
+  display: flex;
+  flex-direction: column;
+  grid-area: Fil_title;
+  color: white;
+}
+
+.Container_Elements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-row: 5rem;
+
+}
+
+.element_Container1 {
+  grid-area: Ele_cont1;
+  /*display: flex;*/
+
+  background-color: white;
+  border-radius: 20px ;
+  margin:  1rem;
+}
+.element_Container2 {
+  grid-area: Ele_cont2;
+  background-color: white;
+  border-radius: 20px ;
+  margin:  1rem;
+}
+
+.Element-text {color: black;
+  padding: 1rem 1rem;}
+
+/* mobil version af siden*/
+@media screen and (max-width: 600px) {
+
+  .Filer_scroll{
+  max-width:880px;
+>>>>>>> 752f94657528799aac8b5ec8636c1ebe1711417b
   margin: 2rem;
   display: grid;
   background-color: #465769;

@@ -9,8 +9,12 @@ import { Table } from 'react-bootstrap';
 import './bootstrap.css';
 import './Dashboard.css'
 
+
 //image import
 import Bispeparken from './Components/Images/Bispeparken-400x400.jpg'
+
+import Favorit from './Components/Farvoriter.js'
+import Nyheder from './Components/Dashboard_nyheder.js'
 
 
 function Dashboard() {
@@ -98,10 +102,10 @@ function Dashboard() {
       </Table>
       </div>
 
+      <Favorit/>
 
 
-    </div>
-
+  </div>
 
   );
 }
